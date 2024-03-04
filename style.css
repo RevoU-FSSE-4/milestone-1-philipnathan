@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 15vw;
+    position: sticky;
+    z-index: 1;
+    background-color: #053658;
+}
+
+.normal-company-logo {
+    height: 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: rgb(230, 230, 230);
+}
+
+.navbar ol {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    list-style-type: none;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+}
+
+.contact-us {
+    background-color: #4c8bf5;
+    padding: 0.3rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.hero-section {
+    height: 1080px;
+    background: url(./assets/hero-section/hero-background.png),
+        radial-gradient(circle at top right, #156e95, #145475, #09203a);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    /* background-origin: content-box, padding-box; 
+    pakai nanti di mobile
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15vw;
+}
+
+.hero-section-main-content {
+    h1,
+    p,
+    h2 {
+        margin-top: 0;
+        margin-bottom: 4rem;
+        font-family: "Poppins", sans-serif;
+    }
+
+    h1 {
+        display: inline-block;
+        font-size: 4rem;
+        text-shadow: 6px 6px 10px black;
+        color: white;
+    }
+
+    h2 {
+        font-size: 5rem;
+        color: rgb(180, 180, 180);
+    }
+
+    p {
+        font-size: 1rem;
+        color: white;
+    }
+
+    span {
+        color: #4c8bf5;
+    }
+}
+
+.hero-section-main-content {
+    width: 30vw;
+}
