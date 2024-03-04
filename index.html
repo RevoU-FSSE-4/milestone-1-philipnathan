@@ -12,6 +12,11 @@
             content="digital agency, data analysis, SEO, social media management, web design"
         />
         <title>Data Pulse</title>
+        <link
+            rel="shortcut icon"
+            href="./assets/logo/company-logo-2.png"
+            type="image/x-icon"
+        />
         <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +26,7 @@
         />
     </head>
     <body>
-        <nav>
+        <nav class="navbar-tags">
             <div class="navbar">
                 <a href="">
                     <picture>
@@ -38,16 +43,44 @@
                 </a>
                 <ol>
                     <li>
-                        <a href="">Home</a>
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link">Services</a>
+                        <div class="services-dropdown">
+                            <ul>
+                                <li>
+                                    <a href="" class="nav-link">
+                                        Social Media Management
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-link">
+                                        Search Engine Optimization
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-link">
+                                        Ads Management
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-link">
+                                        E-commerce Solutions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="nav-link"> Web Design </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="" class="nav-link">Portfolio</a>
                     </li>
                     <li>
-                        <a href="">Services</a>
-                    </li>
-                    <li>
-                        <a href="">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="">About Us</a>
+                        <a href="" class="nav-link">About Us</a>
                     </li>
                 </ol>
                 <ul>
@@ -58,17 +91,163 @@
             </div>
         </nav>
 
-        <section>
+        <header>
             <div class="hero-section">
                 <div class="hero-section-main-content">
                     <h1>DATA PULSE</h1>
                     <h2>
-                        <span>Professional team</span> to take you to the next
-                        level
+                        <strong
+                            ><span>Professional Team</span> to take your
+                            business to the next level</strong
+                        >
                     </h2>
-                    <p>Elevating Your Digital Presence</p>
+                    <p>
+                        Data Pulse Agency offers cutting-edge digital solutions
+                        to elevate your online presence, driving growth and
+                        success in the ever-evolving digital landscape.
+                    </p>
+                </div>
+                <div class="hero-section-client">
+                    <button class="lets-discuss-btn">
+                        <a href=""> Let's Discuss </a>
+                    </button>
+                    <p class="client-firstline">100+</p>
+                    <p class="client-firstline">350+</p>
+                    <p class="client-firstline">100%</p>
+                    <p class="client-content">Happy Client</p>
+                    <p class="client-content">Project Done</p>
+                    <p class="client-content">Client Satisfaction</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="our-client">
+            <div class="client-logos">
+                <div class="logos-slide">
+                    <img src="./assets/client-logo/client-logo-1.png" alt="" />
+                    <img src="./assets/client-logo/client-logo-2.png" alt="" />
+                    <img src="./assets/client-logo/client-logo-3.png" alt="" />
+                    <img src="./assets/client-logo/client-logo-4.png" alt="" />
+                    <img src="./assets/client-logo/client-logo-5.png" alt="" />
+                    <img src="./assets/client-logo/client-logo-6.png" alt="" />
+                    <img src="./assets/client-logo/client-logo-7.png" alt="" />
+                </div>
+                <div class="logos-slide">
+                    <img src="./assets/client-logo/client-logo-1.png" alt="" />
+                    <img src="./assets/client-logo/client-logo-2.png" alt="" />
+                    <img src="./assets/client-logo/client-logo-3.png" alt="" />
+                    <img src="./assets/client-logo/client-logo-4.png" alt="" />
+                    <img src="./assets/client-logo/client-logo-5.png" alt="" />
+                    <img src="./assets/client-logo/client-logo-6.png" alt="" />
+                    <img src="./assets/client-logo/client-logo-7.png" alt="" />
                 </div>
             </div>
         </section>
+
+        <section class="company-values">
+            <div class="first-row">
+                <div class="our-values">
+                    <div class="values-title">
+                        <img
+                            src="./assets/core-value-logo/adaptibility-icon.png"
+                            alt="Adaptibility Icon"
+                        />
+                        <h3>Adaptibility</h3>
+                    </div>
+                    <div class="values-content">
+                        <p>
+                            Embracing change and being flexible in navigating
+                            evolving digital landscapes, ensuring relevance and
+                            resilience in all endeavors.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="our-values">
+                    <div class="values-title">
+                        <img
+                            src="./assets/core-value-logo/trust-icon.png"
+                            alt="Trust Icon"
+                        />
+                        <h3>Trust</h3>
+                    </div>
+                    <div class="values-content">
+                        <p>
+                            We prioritize trust as the foundation of every
+                            interaction with clients and business partners.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="our-values">
+                    <div class="values-title">
+                        <img
+                            src="./assets/core-value-logo/innovation-icon.png"
+                            alt="Innovation Icon"
+                        />
+                        <h3>Innovation</h3>
+                    </div>
+                    <div class="values-content">
+                        <p>
+                            We are committed to continuously seeking new ways to
+                            improve and optimize our services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second-row">
+                <div class="our-values">
+                    <div class="values-title">
+                        <img
+                            src="./assets/core-value-logo/collaboration-icon.png"
+                            alt="Collaboration Icon"
+                        />
+                        <h3>Collaboration</h3>
+                    </div>
+                    <div class="values-content">
+                        <p>
+                            We believe strong collaboration between teams and
+                            clients leads to the best outcomes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="our-values">
+                    <div class="values-title">
+                        <img
+                            src="./assets/core-value-logo/quality-icon.png"
+                            alt="Quality Icon"
+                        />
+                        <h3>Quality</h3>
+                    </div>
+                    <div class="values-content">
+                        <p>
+                            We set high standards for the quality of services
+                            and results we deliver.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="our-values">
+                    <div class="values-title">
+                        <img
+                            src="./assets/core-value-logo/responsibility-icon.png"
+                            alt="Responsibility Icon"
+                        />
+                        <h3>Responsibility</h3>
+                    </div>
+                    <div class="values-content">
+                        <p>
+                            We are accountable to clients, teams, and society,
+                            striving to make a positive impact in all that we
+                            do.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-service"></section>
     </body>
 </html>
