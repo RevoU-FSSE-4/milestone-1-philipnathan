@@ -38,6 +38,11 @@
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
 }
 
 .navbar ol {
@@ -129,9 +134,6 @@
     background-size: 65vw, 100%;
     background-repeat: no-repeat;
     background-position: bottom right;
-    /* background-origin: content-box, padding-box; 
-    pakai nanti di mobile
-    */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,6 +180,22 @@
     }
 }
 
+.hero-services {
+    display: grid;
+    grid-template-columns: repeat(5, 6vw);
+
+    p {
+        margin-bottom: 2vh;
+        font-size: 0.83vw;
+        text-align: center;
+        border-right: 1px solid white;
+    }
+}
+
+.hero-services p:nth-child(1) {
+    border-left: 1px solid white;
+}
+
 .hero-section-client {
     display: grid;
     grid-template-columns: repeat(3, 6vw);
@@ -197,6 +215,10 @@
     margin: 0;
     margin-bottom: 1vh;
     padding: 0;
+}
+
+.lets-discuss-btn:hover {
+    box-shadow: 0 0 50px #4c8bf5;
 }
 
 .lets-discuss-btn a {
@@ -313,7 +335,7 @@
 }
 
 .values-title img {
-    max-width: 3vw;
+    width: 3vw;
     height: 5vh;
     margin-right: 2vw;
     background-color: #3aa2d9;
@@ -609,4 +631,86 @@
     display: flex;
     border: 1px solid black;
     box-shadow: 0 0 35px black;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    padding: 2vh 10vw;
+    background-color: #292929;
+    font-family: "Raleway", sans-serif;
+    color: #9b9b9b;
+}
+
+.footer-socmed,
+.footer-services,
+.footer-company,
+.footer-subscribe {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4vh auto;
+
+    a {
+        text-decoration: none;
+        color: #9b9b9b;
+        font-size: 0.73vw;
+    }
+}
+
+.footer-company {
+    img {
+        height: 4vh;
+    }
+
+    p {
+        margin-top: 2vh;
+        padding-right: 2vw;
+    }
+}
+
+.footer-services {
+    li {
+        list-style-type: none;
+        margin-bottom: 1vh;
+    }
+
+    ul {
+        margin-top: 2vh;
+    }
+
+    h4 {
+        align-self: center;
+    }
+}
+
+.footer-socmed {
+    h4 {
+        align-self: center;
+    }
+}
+
+.socmed-grid {
+    display: grid;
+    grid-template-columns: 3vw 15vw;
+    grid-template-rows: repeat(4, 3vh);
+    gap: 0.2vh 0;
+    margin-top: 2vh;
+
+    img {
+        height: 2vh;
+        width: auto;
+        object-fit: cover;
+    }
+}
+
+.footer-subscribe {
+    h4 {
+        grid-column: 1 / span 2;
+        align-self: center;
+    }
+
+    form {
+        margin-top: 2vh;
+    }
 }
