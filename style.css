@@ -215,17 +215,83 @@
     margin: 0;
     margin-bottom: 1vh;
     padding: 0;
+
+    a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.25vw;
+        font-weight: 700;
+    }
 }
 
 .lets-discuss-btn:hover {
     box-shadow: 0 0 50px #4c8bf5;
 }
 
-.lets-discuss-btn a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.25vw;
-    font-weight: 700;
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 1vh 5vw;
+    }
+
+    .contact-us {
+        display: none;
+    }
+
+    .hero-section {
+        height: 45vh;
+        background: radial-gradient(
+            circle at top right,
+            #156e95,
+            #145475,
+            #09203a
+        );
+        padding: 0 5vw;
+    }
+
+    .hero-section-client,
+    .hero-section-main-content {
+        width: 90vw;
+    }
+
+    .hero-section-main-content {
+        h1 {
+            font-size: 3.75vh;
+        }
+
+        h2 {
+            font-size: 3.33vh;
+        }
+    }
+
+    .hero-services {
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+
+        p {
+            font-size: 1.45vh;
+        }
+    }
+
+    .hero-section-client {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 2.5vh);
+        margin-top: 1vh;
+    }
+
+    .lets-discuss-btn {
+        grid-column: 1 / span 3;
+        grid-row: 1 / 4;
+        width: 50%;
+
+        a {
+            font-size: 1.8vh;
+        }
+    }
+
+    .client-firstline,
+    .client-content {
+        display: none;
+    }
 }
 
 .client-content,
@@ -372,7 +438,7 @@
     -o-border-radius: 10px;
     margin-right: 1vw;
     background-color: white;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 2px black;
     display: grid;
     grid-template-columns: 15vw;
     grid-template-rows: 20vh 22vh 8vh;
@@ -635,18 +701,18 @@
 
 .grid-footer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 0.5fr 0.5fr;
     grid-template-rows: auto;
-    padding: 2vh 10vw;
+    padding: 2vh 20vw;
     background-color: #292929;
     font-family: "Raleway", sans-serif;
+    font-size: 0.625vw;
     color: #9b9b9b;
 }
 
 .footer-socmed,
 .footer-services,
-.footer-company,
-.footer-subscribe {
+.footer-company {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4vh auto;
@@ -654,7 +720,6 @@
     a {
         text-decoration: none;
         color: #9b9b9b;
-        font-size: 0.73vw;
     }
 }
 
@@ -701,16 +766,5 @@
         height: 2vh;
         width: auto;
         object-fit: cover;
-    }
-}
-
-.footer-subscribe {
-    h4 {
-        grid-column: 1 / span 2;
-        align-self: center;
-    }
-
-    form {
-        margin-top: 2vh;
     }
 }
