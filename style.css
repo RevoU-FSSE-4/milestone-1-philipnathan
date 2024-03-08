@@ -112,7 +112,7 @@
     text-decoration: none;
     color: black;
     font-weight: 700;
-    background-color: #3aa2d9;
+    background-color: #5adbb5;
     padding: 0.5rem;
     border: 2px solid black;
     border-radius: 35px;
@@ -128,7 +128,7 @@
 }
 
 .contact-us:hover {
-    box-shadow: 0 0 50px #4c8bf5;
+    box-shadow: 0 0 50px #5dbea3;
 }
 
 .hero-section {
@@ -209,7 +209,7 @@
 
 .lets-discuss-btn {
     grid-column: 1 / span 2;
-    background-color: #3aa2d9;
+    background-color: #5adbb5;
     box-shadow: 3px 3px 10px black;
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -219,6 +219,11 @@
     margin: 0;
     margin-bottom: 1vh;
     padding: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 
     a {
         color: black;
@@ -229,7 +234,7 @@
 }
 
 .lets-discuss-btn:hover {
-    box-shadow: 0 0 50px #4c8bf5;
+    box-shadow: 0 0 50px #5adbb5;
 }
 
 .client-content1,
@@ -453,7 +458,7 @@
 
 .service button {
     text-decoration: none;
-    background-color: #3aa2d9;
+    background-color: #5adbb5;
     padding: 0.5rem;
     border: 2px solid black;
     border-radius: 35px;
@@ -479,7 +484,7 @@
 }
 
 .service button:hover {
-    box-shadow: 0 0 50px #4c8bf5;
+    box-shadow: 0 0 50px #5adbb5;
     width: 60%;
 }
 
